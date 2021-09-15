@@ -1,0 +1,75 @@
+name: Get YouTube Live m3u8
+on:
+  schedule:
+    - cron: "0 */1 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Install youtube-dl
+      run: |
+        sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+        sudo chmod a+rx /usr/local/bin/youtube-dl
+
+    - name: Get MYFM.m3u8
+      run: |
+        touch ./MYFM.m3u8
+        sudo cat >./MYFM.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/channel/UCRzAqsmluZYk-r59pQYSa3Q/live)
+        EOL
+        
+    - name: Get 8FMLive!.m3u8
+      run: |
+        touch ./8FMLive!.m3u8
+        sudo cat >./8FMLive!.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/channel/UCXKqVoc7khb8cg3ugfrih4g/live)
+        EOL        
+    - name: Get 36YnV9STBqc.m3u8
+      run: |
+        touch ./36YnV9STBqc.m3u8
+        sudo cat >./36YnV9STBqc.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/watch?v=36YnV9STBqc)
+        EOL       
+    - name: Get Panda24HDLive.m3u8
+      run: |
+        touch ./Panda24HDLive.m3u8
+        sudo cat >./Panda24HDLive.m3u8<<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/channel/UCtEgLf0_j1vJLz0aNEdO2SQ/live)
+        EOL
+    - name: Get Beautiful Relaxing Music.m3u8
+      run: |
+        touch ./Beautiful.m3u8
+        sudo cat >./Beautiful.m3u8<<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/channel/UCwfsV3Arx9rO7hWY3wXsasA/live)
+        EOL
+    - name : Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: YTlive m3u8
+        path: .
+    - name: Git push assets to "YTlive" branch
+      run: |
+        git init
+        git config --local user.name "actions"
+        git config --local user.email "action@github.com"
+        git checkout -b YTlive
+        git add .
+        git commit -m "Update YTlive"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git push -f -u origin YTlive
