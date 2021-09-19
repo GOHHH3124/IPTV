@@ -8,23 +8,25 @@ http://gohhh40.xp3.biz/php/streams.php?ch=TV1
 #EXTINF:-1 group-title="新马频道",TV2
 http://gohhh40.xp3.biz/php/streams.php?ch=TV2
 #EXTINF:-1 group-title="新马频道",TV3
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=tv3&qu=480p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=tv3&qu=2
 #EXTINF:-1 group-title="新马频道",TV3
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=tv3&qu=720p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=tv3&qu=3
 #EXTINF:-1 group-title="新马频道",NTV7
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=NTV7&qu=480p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=NTV7&qu=2
 #EXTINF:-1 group-title="新马频道",NTV7
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=NTV7&qu=720p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=NTV7&qu=3
 #EXTINF:-1 group-title="新马频道",NTV7
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=NTV7&qu=1080p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=NTV7&qu=4
 #EXTINF:-1 group-title="新马频道",八度空间
-https://f7xwvry6.mg.98yi.top/php/live.php?strz=8TV&qu=480p
+https://f7xwvry6.mg.98yi.top/php/live.php?strz=8TV&qu=1
+#EXTINF:-1 group-title="新马频道",八度空间
+https://f7xwvry6.mg.98yi.top/php/live.php?strz=8TV&qu=2
 #EXTINF:-1 group-title="新马频道",TV9
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=TV9&qu=480p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=TV9&qu=2
 #EXTINF:-1 group-title="新马频道",TV9
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=TV9&qu=720p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=TV9&qu=3
 #EXTINF:-1 group-title="新马频道",TV9
-http://f7xwvry6.mg.98yi.top/php/live.php?strz=TV9&qu=1080p
+http://f7xwvry6.mg.98yi.top/php/live.php?strz=TV9&qu=4
 #EXTINF:-1 group-title="新马频道",GOSHOP
 http://f7xwvry6.mg.98yi.top/php/GOSHOP.php?id=480
 #EXTINF:-1 group-title="新马频道",Astro Go Shop 2
