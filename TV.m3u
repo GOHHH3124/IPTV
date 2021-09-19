@@ -1,8 +1,9 @@
 #EXTM3U
 
-#EXTINF:-1 group-title="m3u8",BERITARTM_480
+#EXTINF:-1 group-title="m3u8",BERITA RTM
 https://rtmlive03tv.secureswiftcontent.com/rtmchannel/03-manifest.mpd|Referer=https://rtmklik.rtm.gov.my
-#EXTINF:-1 group-title="新马频道",TV1
+
+#EXTINF:-1 group-title="新马频道" tvg-logo="https://playtv.unifi.com.my:7041/CPS/images/universal/film/logo/201907/20190708/20190708071026467w2e.png",TV1
 http://gohhh40.xp3.biz/php/streams.php?ch=TV1
 #EXTINF:-1 group-title="新马频道",TV2
 http://gohhh40.xp3.biz/php/streams.php?ch=TV2
@@ -80,7 +81,7 @@ http://f7xwvry6.mg.98yi.top/php/streams.php?ch=Natgeowild
 http://f7xwvry6.mg.98yi.top/php/streams.php?ch=Naura
 #EXTINF:-1 group-title="新马频道",Rtm Sport
 http://f7xwvry6.mg.98yi.top/php/streams.php?ch=Rtmsport
-#EXTINF:-1 group-title="新马频道",TV1
+#EXTINF:-1 group-title="新马频道" tvg-logo="https://playtv.unifi.com.my:7041/CPS/images/universal/film/logo/201907/20190708/20190708071026467w2e.png",TV1
 http://f7xwvry6.mg.98yi.top/php/streams.php?ch=TV1
 #EXTINF:-1 group-title="新马频道",TV2
 http://f7xwvry6.mg.98yi.top/php/streams.php?ch=TV2
@@ -258,7 +259,7 @@ http://gohhh40.xp3.biz/php/streams2.php?ch=Natgeowild
 http://gohhh40.xp3.biz/php/streams2.php?ch=Naura
 #EXTINF:-1 group-title="新马频道",Rtm Sport
 http://gohhh40.xp3.biz/php/streams2.php?ch=Rtmsport
-#EXTINF:-1 group-title="新马频道",TV1
+#EXTINF:-1 group-title="新马频道"tvg-logo="https://playtv.unifi.com.my:7041/CPS/images/universal/film/logo/201907/20190708/20190708071026467w2e.png",TV1
 http://gohhh40.xp3.biz/php/streams2.php?ch=TV1
 #EXTINF:-1 group-title="新马频道",TV2
 http://gohhh40.xp3.biz/php/streams2.php?ch=TV2
