@@ -2,6 +2,10 @@
 
 #EXTINF:-1 group-title="m3u8",BERITA RTM
 https://rtmlive03tv.secureswiftcontent.com/rtmchannel/03-manifest.mpd|Referer=https://rtmklik.rtm.gov.my
+#EXTINF:-1 group-title="m3u8" tvg-logo="https://playtv.unifi.com.my:7041/CPS/images/universal/film/logo/201907/20190708/20190708071026467w2e.png",TV1
+https://rtmlive01.secureswiftcontent.com/rtmchannel/01-720.m3u8|Referer=https://rtmklik.rtm.gov.my
+#EXTINF:-1 group-title="m3u8" tvg-logo="https://myklikstatic.secureswiftcontent.com/image/Logo-TV2-May2021-PNG.png",TV2
+https://rtmlive04.secureswiftcontent.com/rtm/live04_manifest.m3u8|Referer=https://rtmklik.rtm.gov.my
 
 #EXTINF:-1 group-title="新马频道" tvg-logo="https://playtv.unifi.com.my:7041/CPS/images/universal/film/logo/201907/20190708/20190708071026467w2e.png",TV1
 http://gohhh40.xp3.biz/php/streams.php?ch=TV1
